@@ -1,0 +1,247 @@
+*{
+    transition: 0.5s;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    background-color: black;
+}
+body {
+    font-family: 'Merriweather', serif;
+}
+header {
+    background: transparent;
+}
+.move {
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: 3s;
+}
+.move .logo{
+    color: black;
+}
+.move .navbar a{
+    color: black;
+}
+.move .navbar a:hover{
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    flex: 1;
+}
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+}
+.navbar a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+}
+.navbar a:hover {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.background img {
+    height: 580px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:300px;
+    width:500px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:300px;
+    width:500px;
+}
+.about {
+    display: flex;
+    margin-top: 40px;
+}
+.info {
+    margin-left: 15px;
+    color: rgb(0, 0, 0);
+}
+.info h1 {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: red;
+    padding: 5px;
+    width: fit-content;
+}
+.minfo {
+    display: flex;
+    color: aliceblue;
+}
+.more {
+    margin-top: 15px;
+    color: aliceblue;
+}
+.title button {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 160px;
+    height: 60px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    color: aliceblue;
+}
+.title button:hover {
+    color: rgb(184, 31, 31);
+}
+i {
+    font-size: 20px;
+    color: red;
+}
+.titlee {
+    margin: 50px 0px 0px 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: red;
+    padding: 5px;
+    width: fit-content;
+}
+.beauty {
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+section img {
+    width: 300px;
+    height: 200px;
+}
+section img:hover {
+    box-shadow: 5px 5px 5px 5px white;
+}
+.information {
+    margin-top: 10px;
+}
+.information h3 {
+    color: white;
+}
+.beauty button {
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    color: aliceblue;
+}
+.beauty button:hover {
+    color: rgb(184, 31, 31);
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    color: aliceblue;
+    background-color: rgba(61, 55, 55, 0.664);
+}
+footer i {
+    margin-left: 15px;
+}
+footer i:hover {
+    color: white;
+    background-color: red;
+    padding: 20px;
+}
+@media screen and (max-width: 414px) {
+    .header {
+        width: 100%;
+    }
+    .background img {
+        width: 414px;
+    }
+    .logo {
+        flex: 1;
+    }
+    .logo h1{
+        font-size: small;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar a {
+        font-size: small;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about .more {
+        width: 300px;
+    }
+    .mapouter {
+        width: 300px;
+        height: 300px;
+    }
+    .gmap_canvas {
+        width: 300px;
+        height: 300px;
+    }
+    footer {
+        width: 350px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    section img {
+        width: 200px;
+        height: 100px;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .background img {
+        width: 375px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .background img {
+        width: 1024px;
+    }
+}
