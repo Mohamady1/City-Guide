@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Istanbul</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./website/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+            <div class="logo">
+                <h1>Istanbul</h1>
+                <img src="./gallery/Flag_Turkey.svg">
+            </div>
+            <div class="nav_container">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">City</a></li>
+                    <li><a href="#beauty">Places</a></li>
+                    <li><a href="#contacts">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+        <div id="home" class="background">
+            <img src="./gallery/pexels-photo-879478.jpeg" alt="">
+        </div>
+        </header>
+        <main>
+            <div id="about" class="about">
+            <div class="info">
+                <h1>City Information</h1>
+                <div class="minfo">
+                    <h2>Istanbul</h2>
+                    <i class="fas fa-heart" type="button"></i>
+                </div>
+                <div class="more">
+                    <p>Istanbul is the largest city in Turkey and the country's economic, cultural and historic center. The city straddles the Bosphorus strait, and lies in both Europe and Asia, with a population of over 15 million residents, comprising 19% of the population of Turkey. Istanbul is the most populous city in Europe, and the world's fifteenth-largest city.</p>
+                </div>
+                <div class="title">
+                    <button id="wikipedia" type="button">More Info</button>
+            </div>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=istanbul&t=k&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="titlee">
+            <h1>Places you should visit</h1>
+        </div>
+        <div id="beauty" class="beauty">
+            <section>
+                <img src="./gallery/licensed-image (1).jpg" alt="">
+                <div class="information">
+                <h3>Galta Tower</h3>
+                <button class="galta-info" type="button">Info</button>
+                <a href="#goMap"><button id="galta" class="fas fa-location-pin" type="button"></button></a>
+                </div>
+            </section>
+            <section>
+                <img src="./gallery/bosfor.jpg" alt="">
+                <div class="information">
+                    <h3>Bosphorus Bridge</h3>
+                    <button class="bosfor-info" type="button">Info</button>
+                    <a href="#goMap"><button id="bosfor" class="fas fa-location-pin" type="button"></button></a>
+                    </div>
+            </section>
+            <section>
+                <img src="./gallery/ayasofia.jpg" alt="">
+                <div class="information">
+                    <h3>Hagia Sophia Mosque</h3>
+                    <button class="sofia-info" type="button">Info</button>
+                    <a href="#goMap"><button id="sofia" class="fas fa-location-pin" type="button"></button></a>
+                    </div>
+            </section>
+            <section>
+                <img src="./gallery/a7med.jpg" alt="">
+                <div class="information">
+                    <h3>Sultan Ahmed Mosque</h3>
+                    <button class="a7med-info" type="button">Info</button>
+                    <a href="#goMap"><button id="ahmed" class="fas fa-location-pin" type="button"></button></a>
+                    </div>
+            </section>
+            <section>
+                <img src="./gallery/bazar.jpg" alt="">
+                <div class="information">
+                    <h3>Grand Bazaar</h3>
+                    <button class="bazar-info" type="button">Info</button>
+                    <a href="#goMap"><button id="bazar" class="fas fa-location-pin" type="button"></button></a>
+                    </div>
+            </section>
+            <section>
+                <img src="./gallery/manb3.jpg" alt="">
+                <div class="information">
+                    <h3>Basilica Cistern</h3>
+                    <button class="manb3-info" type="button">Info</button>
+                    <a href="#goMap"><button id="manbaa" class="fas fa-location-pin" type="button"></button></a>
+                    </div>
+            </section>
+        </div>
+    
+        </main>
+         <footer id="contacts">
+             <p>&copy 2021 by Omar Ahmed Mohamady</p>
+             <i class="fas fa-heart"></i>
+        </footer>
+        <script src="./website/app.js"></script>
+    </body>
+</html>
