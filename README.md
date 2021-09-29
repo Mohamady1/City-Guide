@@ -10,3 +10,4 @@ Languages: HTML, CSS and JavaScript
 4- location for each place
 5- responsive web
 6- daynamic with JavaScript
+7- click on place location button to get location on map
