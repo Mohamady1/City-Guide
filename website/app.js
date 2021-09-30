@@ -23,8 +23,9 @@ window.onscroll = () => {
 //get location
 //1
 galtaloc.addEventListener('click', () => {
+    const map = document.querySelector('.mapouter');
     //remove istanbul map
-    map.parentNode.removeChild(map);
+    map.remove();
     //create main div
     const div = document.createElement('div');
     div.id = 'goMap';
