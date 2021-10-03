@@ -1,5 +1,6 @@
 //global varaibles
 const header = document.querySelector('.header');
+const buttonTop = document.querySelector('#btntop');
 //location
 const place = document.querySelector('.about')
 const map = document.querySelector('.mapouter')
@@ -18,6 +19,20 @@ window.onscroll = () => {
     else {
         header.classList.remove('move');
     }
+}
+
+// When the user scrolls down 100px from the top of the document, show the button
+document.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop > 100) {
+        buttonTop.style.display = "block";
+      } else {
+        buttonTop.style.display = "none";
+      }
+})
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 //get location
