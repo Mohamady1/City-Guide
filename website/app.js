@@ -35,144 +35,55 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-//get location
+//function to get location
+function addMap(src) {
+  const map = document.querySelector('.mapouter');
+  //remove istanbul map
+  map.remove();
+  //create main div
+  const div = document.createElement('div');
+  div.id = 'goMap';
+  div.className = 'mapouter';
+  //secondary div
+  const secDiv = document.createElement('div');
+  secDiv.className = 'gmap_canvas';
+  //iframe
+  const iframe = document.createElement('iframe')
+  iframe.id = 'gmap_canvas';
+  iframe.src = src;
+  iframe.width = '500'; 
+  iframe.height = '300';
+  secDiv.appendChild(iframe);
+  div.appendChild(secDiv);
+  place.appendChild(div);
+}
 //1
 galtaloc.addEventListener('click', () => {
-    const map = document.querySelector('.mapouter');
-    //remove istanbul map
-    map.remove();
-    //create main div
-    const div = document.createElement('div');
-    div.id = 'goMap';
-    div.className = 'mapouter';
-    //secondary div
-    const secDiv = document.createElement('div');
-    secDiv.className = 'gmap_canvas';
-    //iframe
-    const iframe = document.createElement('iframe')
-    iframe.id = 'gmap_canvas';
-    iframe.src = 'https://maps.google.com/maps?q=Galta%20Tower,%20istanbul&t=k&z=19&ie=UTF8&iwloc=&output=embed';
-    iframe.width = '500'; 
-    iframe.height = '300';
-    secDiv.appendChild(iframe);
-    div.appendChild(secDiv);
-    place.appendChild(div);
-
+    addMap('https://maps.google.com/maps?q=Galta%20Tower,%20istanbul&t=k&z=19&ie=UTF8&iwloc=&output=embed');
 });
 //2
 bosforloc.addEventListener('click', () => {
-    const map = document.querySelector('.mapouter');
-    //remove istanbul map
-    map.remove();
-    //create main div
-    const div = document.createElement('div');
-    div.id = 'goMap';
-    div.className = 'mapouter';
-    //secondary div
-    const secDiv = document.createElement('div');
-    secDiv.className = 'gmap_canvas';
-    //iframe
-    const iframe = document.createElement('iframe');
-    iframe.id = 'gmap_canvas';
-    iframe.src = 'https://maps.google.com/maps?q=Bosphorus%20Bridge&t=k&z=17&ie=UTF8&iwloc=&output=embed';
-    iframe.width = '500'; 
-    iframe.height = '300';
-    secDiv.appendChild(iframe);
-    div.appendChild(secDiv);
-    place.appendChild(div);
+    addMap('https://maps.google.com/maps?q=Bosphorus%20Bridge&t=k&z=17&ie=UTF8&iwloc=&output=embed');
 
 });
 //3
 sofialoc.addEventListener('click', () => {
-    const map = document.querySelector('.mapouter');
-    //remove istanbul map
-    map.parentNode.removeChild(map);
-    //create main div
-    const div = document.createElement('div');
-    div.id = 'goMap';
-    div.className = 'mapouter';
-    //secondary div
-    const secDiv = document.createElement('div');
-    secDiv.className = 'gmap_canvas';
-    //iframe
-    const iframe = document.createElement('iframe')
-    iframe.id = 'gmap_canvas';
-    iframe.src = 'https://maps.google.com/maps?q=Hagia%20Sophia%20Mosque&t=k&z=17&ie=UTF8&iwloc=&output=embed';
-    iframe.width = '500'; 
-    iframe.height = '300';
-    secDiv.appendChild(iframe);
-    div.appendChild(secDiv);
-    place.appendChild(div);
+    addMap('https://maps.google.com/maps?q=Hagia%20Sophia%20Mosque&t=k&z=17&ie=UTF8&iwloc=&output=embed');
 
 });
 //4
 ahmedloc.addEventListener('click', () => {
-    const map = document.querySelector('.mapouter');
-    //remove istanbul map
-    map.parentNode.removeChild(map);
-    //create main div
-    const div = document.createElement('div');
-    div.id = 'goMap';
-    div.className = 'mapouter';
-    //secondary div
-    const secDiv = document.createElement('div');
-    secDiv.className = 'gmap_canvas';
-    //iframe
-    const iframe = document.createElement('iframe')
-    iframe.id = 'gmap_canvas';
-    iframe.src = 'https://maps.google.com/maps?q=Sultan%20Ahmed%20Mosque&t=k&z=17&ie=UTF8&iwloc=&output=embed';
-    iframe.width = '500'; 
-    iframe.height = '300';
-    secDiv.appendChild(iframe);
-    div.appendChild(secDiv);
-    place.appendChild(div);
+    addMap('https://maps.google.com/maps?q=Sultan%20Ahmed%20Mosque&t=k&z=17&ie=UTF8&iwloc=&output=embed');
 
 });
 //5
 bazarloc.addEventListener('click', () => {
-    const map = document.querySelector('.mapouter');
-    //remove istanbul map
-    map.parentNode.removeChild(map);
-    //create main div
-    const div = document.createElement('div');
-    div.id = 'goMap';
-    div.className = 'mapouter';
-    //secondary div
-    const secDiv = document.createElement('div');
-    secDiv.className = 'gmap_canvas';
-    //iframe
-    const iframe = document.createElement('iframe')
-    iframe.id = 'gmap_canvas';
-    iframe.src = 'https://maps.google.com/maps?q=Grand%20Bazaar,%20istanbul&t=k&z=17&ie=UTF8&iwloc=&output=embed';
-    iframe.width = '500'; 
-    iframe.height = '300';
-    secDiv.appendChild(iframe);
-    div.appendChild(secDiv);
-    place.appendChild(div);
+    addMap('https://maps.google.com/maps?q=Grand%20Bazaar,%20istanbul&t=k&z=17&ie=UTF8&iwloc=&output=embed');
 
 });
 //6
 manbaaaloc.addEventListener('click', () => {
-    const map = document.querySelector('.mapouter');
-    //remove istanbul map
-    map.parentNode.removeChild(map);
-    //create main div
-    const div = document.createElement('div');
-    div.id = 'goMap';
-    div.className = 'mapouter';
-    //secondary div
-    const secDiv = document.createElement('div');
-    secDiv.className = 'gmap_canvas';
-    //iframe
-    const iframe = document.createElement('iframe')
-    iframe.id = 'gmap_canvas';
-    iframe.src = 'https://maps.google.com/maps?q=Basilica%20Cistern&t=k&z=17&ie=UTF8&iwloc=&output=embed';
-    iframe.width = '500'; 
-    iframe.height = '300';
-    secDiv.appendChild(iframe);
-    div.appendChild(secDiv);
-    place.appendChild(div);
-
+    addMap('https://maps.google.com/maps?q=Basilica%20Cistern&t=k&z=17&ie=UTF8&iwloc=&output=embed');
 });
 
 //make scroll smooth
