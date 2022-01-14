@@ -72,7 +72,7 @@ header {
 }
 .background {
     height: 580px;
-    background-image: url("./gallery/pexels-photo-879478.jpeg");
+    background-image: url("../gallery/pexels-photo-879478.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
